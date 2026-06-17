@@ -164,8 +164,8 @@ export default function App() {
       {/* ────────────────────────────────────────────────────────
           HOMEPAGE STATIC FULL HEADER
           ──────────────────────────────────────────────────────── */}
-      <header className="sticky top-0 w-full z-40 bg-white/95 backdrop-blur-md border-b border-[#eaeef2] shadow-sm select-none">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex justify-between items-center">
+      <header className="sticky top-0 w-full z-45 bg-white/95 backdrop-blur-md border-b border-[#eaeef2] shadow-sm select-none">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-12 py-3.5 md:py-0 min-h-[5rem] flex flex-col md:flex-row justify-between items-center gap-3">
           
           {/* Logo Brand Title */}
           <div 
@@ -175,18 +175,18 @@ export default function App() {
             }}
             className="flex items-center space-x-3 cursor-pointer group"
           >
-            <div className="w-11 h-11 rounded-2xl bg-[#ff9f89] flex items-center justify-center shadow-md shadow-[#ff9f89]/25 group-hover:scale-105 duration-200">
-              <span className="material-symbols-outlined text-white text-[24px] font-bold">favorite</span>
+            <div className="w-10 h-10 md:w-11 md:h-11 rounded-2xl bg-[#ff9f89] flex items-center justify-center shadow-md shadow-[#ff9f89]/25 group-hover:scale-105 duration-200">
+              <span className="material-symbols-outlined text-white text-[20px] md:text-[24px] font-bold">favorite</span>
             </div>
             <div>
-              <h1 className="font-display font-black text-lg text-[#944937] leading-none tracking-tight">
+              <h1 className="font-display font-black text-base md:text-lg text-[#944937] leading-none tracking-tight">
                 My Push-and-Pull Style
               </h1>
             </div>
           </div>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
+          {/* Navigation Links (Visible on both mobile & desktop) */}
+          <nav className="flex items-center space-x-1 sm:space-x-2">
             <button 
               onClick={() => {
                 if (testState === 'playing') {
@@ -198,7 +198,7 @@ export default function App() {
                   setActiveTab('test');
                 }
               }}
-              className={`px-5 py-2.5 rounded-full text-[14px] font-bold transition-all duration-200 cursor-pointer ${
+              className={`px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-full text-[13px] sm:text-[14px] font-bold transition-all duration-200 cursor-pointer ${
                 activeTab === 'test' 
                   ? 'bg-[#ff9f89]/15 text-[#944937]' 
                   : 'text-[#54433f] hover:bg-[#f0f4f8]'
@@ -208,7 +208,7 @@ export default function App() {
             </button>
             <button 
               onClick={() => setActiveTab('guide')}
-              className={`px-5 py-2.5 rounded-full text-[14px] font-bold transition-all duration-200 cursor-pointer ${
+              className={`px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-full text-[13px] sm:text-[14px] font-bold transition-all duration-200 cursor-pointer ${
                 activeTab === 'guide' 
                   ? 'bg-[#ff9f89]/15 text-[#944937]' 
                   : 'text-[#54433f] hover:bg-[#f0f4f8]'
