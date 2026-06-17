@@ -1,0 +1,6 @@
+{
+  "name": "My Push-and-Pull Style",
+  "description": "연락 문제로 보는 나의 밀당 스타일 및 연애 애착 유형 테스트 앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
